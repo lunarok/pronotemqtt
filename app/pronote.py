@@ -7,7 +7,6 @@ from datetime import timedelta
 import json
 import logging
 import math
-import sys
 
 from pronotepy.ent import *
 import requests
