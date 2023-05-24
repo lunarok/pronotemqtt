@@ -35,4 +35,4 @@ if [ ! -f "$APP/hass.py" ]; then
 fi
 
 exec "$@"
-python3 /app/pronote2mqtt.py --pronote_fullName_1 "$PRONOTE_NOM $PRONOTE_PRENOM" --pronote_prefixurl_1 "$PRONOTE_URL" --pronote_username_1 $PRONOTE_USER --pronote_password_1 $PRONOTE_PWD --pronote_ent_1 $PRONOTE_ENT --mqtt_host "$MQTT_HOST"
+python3 /app/pronote2mqtt.py --pronote_fullName_1 "$PRONOTE_NOM $PRONOTE_PRENOM" --pronote_prefixurl_1 "$PRONOTE_URL" --pronote_username_1 "$PRONOTE_USER" --pronote_password_1 "$PRONOTE_PWD" --pronote_ent_1 "$PRONOTE_ENT" --mqtt_host "$MQTT_HOST"
