@@ -3,7 +3,6 @@
 import argparse
 import os
 import logging
-import sys
 
 def _isItTrue(val):
   
@@ -22,16 +21,16 @@ class Params:
     # Step 1 : set default params
     
     # Pronote params child 1 (setup to support 2 children, see pronote2mqtt.py)
-    self.pronoteUsername_1 = 'sys.argv[4]'
-    self.pronotePassword_1 = 'sys.argv[5]'
-    self.pronotePrefixUrl_1 = 'sys.argv[2]'
+    self.pronoteUsername_1 = 'demonstration'
+    self.pronotePassword_1 = 'pronotevs'
+    self.pronotePrefixUrl_1 = 'demo'
     self.pronoteEnt_1 = True
-    self.pronoteCas_1 = "sys.argv[6]"
+    self.pronoteCas_1 = ""
     self.pronoteGradesAverages_1 = True
     
     self.pronoteParent_1 = True
     # when using parent acces with more than 1 child, then add the fullname here in format "NAME Firstname", add the same setup below but then for the 2nd child
-    self.pronoteFullName_1 = "sys.argv[1]"
+    self.pronoteFullName_1 = ""
     
     self.pronoteUsername_2 = ''
     self.pronotePassword_2 = ''
@@ -44,7 +43,7 @@ class Params:
     self.pronoteFullName_2 = ""
     
     # Mqtt params
-    self.mqttHost = 'sys.argv[7]'
+    self.mqttHost = ''
     self.mqttPort = 1883
     self.mqttClientId = 'pronote2mqtt'
     self.mqttUsername = ''
