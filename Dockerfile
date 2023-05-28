@@ -28,5 +28,5 @@ RUN pip3 install --upgrade pip && \
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["python3", "/app/pronote2mqtt.py"]
