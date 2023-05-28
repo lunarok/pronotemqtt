@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.CR_PAT }}
 
       - name: Build Docker image
-        run: docker build -t pronotemqtt:main .
+        run: docker build -t pronotemqtt:latest .
 
       - name: Extract metadata (tags, labels) for Docker GHCR
         env:
