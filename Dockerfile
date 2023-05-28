@@ -29,4 +29,4 @@ COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
-#CMD ["python3", "/app/pronote2mqtt.py", "--pronote_fullName_1 $PRONOTE_NOM_PRENOM", "--pronote_prefixurl_1 $PRONOTE_URL", "--pronote_username_1 $PRONOTE_USER", "--pronote_password_1 $PRONOTE_PWD", "--pronote_ent_1 $PRONOTE_ENT", "--mqtt_host $MQTT_HOST"]
+CMD ["python3", "/app/pronote2mqtt.py"]
